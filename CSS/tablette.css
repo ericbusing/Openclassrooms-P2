@@ -1,0 +1,140 @@
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    nav {
+        display: flex;
+        width: auto;
+        text-align: center;
+    }
+    .sub_nav a:hover {
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+        padding-bottom: 15px;
+    }
+    .intro_title {
+        text-align: center;
+    }
+    .searchbar {
+        display: flex;
+        justify-content: center;
+    }
+    .filters , .filters > h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    section  {
+        display: flex;
+        flex-direction: column;
+    }
+    .results {
+        gap: 30px;
+    }
+    #results1 > h3 {
+        margin-left: 25px;
+    }
+    article {
+        display: flex;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        padding: 0;
+    }
+    article a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+    .apartments_list {
+        display: flex;
+        margin: 0;
+    }
+    .apartments_card img {
+        width: 220px;
+        height: 250px;
+    }
+    .details {
+        padding-bottom: 10px;
+    }
+    .details h3 {
+        font-size: 18px;
+    }
+    .details .stars {
+        font-size: 12px;
+    }
+    aside {
+        border-radius: 20px;
+    }
+    #intro_pop h3 {
+        padding-left: 0;
+    }
+    .populars_list {
+        width: auto;
+        margin-left: 50px;
+    }
+    .populars_list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .populars_card {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .populars_card img {
+        width: 220px;
+        height: 185px;
+    }
+    .pop_details h3 {
+        font-size: 22px;
+        padding-right: 70px;
+    }
+    .pop_details p {
+        font-size: 16px;
+    }
+    .pop_stars {
+        font-size: 16px;
+        margin-top: 70px;
+    }
+    #activities :nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .big_card {
+        width: 180px;
+        height: 470px;
+    }
+    #activities .big_card img {
+        width: 180px;
+        height: 400px;
+    }
+    #activities .little_cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .lc1 , .lc2 , .lc3 , .lc4 {
+        height: 210px;
+        margin-bottom: 33px;    
+    }
+    .lc1 {
+        margin-bottom: 46px;
+    }
+    .lc3 {
+        margin-bottom: 48px;
+    }
+    .lc3 h4 {
+        margin-top: 10px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding-right: 0;
+    }
+    footer ul {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+    }
+}
