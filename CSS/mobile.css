@@ -1,5 +1,11 @@
 @media (max-width: 768px)
 {    
+    :root {
+        --blue: #0065fc;
+        --lightgrey: #f2f2f2;
+    }
+
+    /*Header*/
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -22,17 +28,19 @@
         padding-bottom: 15px;    
         flex-basis: 50%;
         padding-left: 0;
-        border-bottom: 3px solid #f2f2f2;
+        border-bottom: 3px solid var(--lightgrey);
         margin: 0;
     }
     .sub_nav a:hover {
-        color: #0065fc;
-        border-bottom: 3px solid #0065fc;
+        color: var(--blue);
+        border-bottom: 3px solid var(--blue);
         border-top: none;
     }
     header {
         margin: 0;
     }
+
+    /*Main*/
     main > .intro_title {
         margin-left: 0;
     }
@@ -41,6 +49,8 @@
         padding-left: 15px;
         padding-right: 10px;
     }
+
+    /*Searchbar*/
     .intro_title > h2 , .searchbar{
         padding-left: 15px;
     }
@@ -58,6 +68,8 @@
         display: inline;
         padding: 4px;
     }
+
+    /*Filters*/
     .filters {
         margin: 25px 0 20px 10px;
     }
@@ -71,12 +83,16 @@
     .info {
         margin-left: 15px;
     }
+
+    /*Section*/
     .results {
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
         gap: 0;
     }
+
+    /*Article*/
     article {
         display: flex;
         flex-wrap: wrap;
@@ -94,9 +110,14 @@
         margin-bottom: 0;
         margin-left: 10px;
     }
+    .card .apartments_card {
+        width: 100%;
+    }
     .apartments_card img {
         width: 320px;
     }
+
+    /*Aside*/
     aside {
         border-radius: 0;
     }
@@ -110,6 +131,7 @@
         width: 40%;
     }
     .pop_details h3 {
+        padding-right: 70px;
         margin: 15px -50px 0 10px;
     }
     .pop_details p {
@@ -121,6 +143,8 @@
     .pop_stars {
         margin: 40px 0 0 10px;
     }
+
+    /*Activities*/
     #activities :nth-child(2) {
         display: flex;
         flex-direction: column;
@@ -142,12 +166,18 @@
         width: 100%;
     }
     .big_card {
+        width: auto;
         height: 210px;
+    }    
+    .little_cards .figure_lc {
+        width: auto;
     }
     .lc1 img  {
         object-fit: cover;
         object-position: 30% 42%;
     }
+
+    /*Footer*/
     footer {
         display: flex;
         flex-direction: column;

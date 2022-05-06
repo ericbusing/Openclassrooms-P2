@@ -1,29 +1,43 @@
-@media screen and (min-width: 768px) and (max-width: 992px)
+@media screen and (min-width: 768px) and (max-width: 991px)
 {
+    :root {
+        --blue: #0065fc;
+        --lightgrey: #f2f2f2;
+    }
+
+    /*Header*/
     nav {
         display: flex;
         width: auto;
         text-align: center;
     }
     .sub_nav a:hover {
-        color: #0065fc;
-        border-bottom: 3px solid #0065fc;
+        color: var(--blue);
+        border-bottom: 3px solid var(--blue);
         border-top: none;
         padding-bottom: 15px;
     }
+
+    /*Main*/
     .intro_title {
         text-align: center;
     }
+
+    /*Searchbar*/
     .searchbar {
         display: flex;
         justify-content: center;
     }
+
+    /*Filters*/
     .filters , .filters > h3 {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 10px;
     }
+
+    /*Section*/
     section  {
         display: flex;
         flex-direction: column;
@@ -31,12 +45,14 @@
     .results {
         gap: 30px;
     }
+
+    /*Article*/
     #results1 > h3 {
         margin-left: 25px;
     }
     article {
         display: flex;
-        background-color: #f2f2f2;
+        background-color: var(--lightgrey);
         border-radius: 20px;
         padding: 0;
     }
@@ -49,6 +65,10 @@
     .apartments_list {
         display: flex;
         margin: 0;
+    }
+    .apartments_card {
+        width: 230px;
+        height: 350px;
     }
     .apartments_card img {
         width: 220px;
@@ -63,11 +83,13 @@
     .details .stars {
         font-size: 12px;
     }
+
+    /*Aside*/
     aside {
         border-radius: 20px;
     }
-    #intro_pop h3 {
-        padding-left: 0;
+    #intro_pop {
+        margin-left: 40px;
     }
     .populars_list {
         width: auto;
@@ -79,11 +101,11 @@
         margin: 0;
     }
     .populars_card {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 35px;
+        width: 100%;
     }
     .populars_card img {
-        width: 220px;
+        width: 40%;
         height: 185px;
     }
     .pop_details h3 {
@@ -97,6 +119,8 @@
         font-size: 16px;
         margin-top: 70px;
     }
+
+    /*Activities*/
     #activities :nth-child(2) {
         display: flex;
         flex-direction: row;
@@ -114,19 +138,27 @@
         display: flex;
         flex-direction: column;
     }
+    .little_cards {
+        width: 180px;
+    }
     .lc1 , .lc2 , .lc3 , .lc4 {
         height: 210px;
         margin-bottom: 33px;    
     }
-    .lc1 {
+    .lc1 , .lc3 {
         margin-bottom: 46px;
     }
-    .lc3 {
-        margin-bottom: 48px;
+    .lc1 .figure_lc {
+        width: 100%;
+    }
+    .lc3 .figure_lc {
+        width: 100%;
     }
     .lc3 h4 {
         margin-top: 10px;
     }
+
+    /*Footer*/
     footer {
         display: flex;
         flex-direction: row;
