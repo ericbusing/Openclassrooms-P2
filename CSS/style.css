@@ -2,13 +2,15 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway' , sans-serif;
+
 }
 :root {
     --blue: #0065fc;
     --lightblue: #deebff;
     --lightgrey: #f2f2f2;
 }
+
 /*Body*/
 body {
     max-width: 1514px;
@@ -549,8 +551,8 @@ footer a {
         margin-bottom: 0;
         margin-left: 10px;
     }
-    .card .apartments_card {
-        width: 100%;
+    .card , .apartments_card{
+        width: auto;
     }
     .apartments_card img {
         width: 320px;
@@ -693,7 +695,7 @@ footer a {
         height: 350px;
     }
     .apartments_card img {
-        width: 220px;
+        width: 100%;
         height: 250px;
     }
     .details {
