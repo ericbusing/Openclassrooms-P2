@@ -266,6 +266,7 @@ aside {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
+    margin-right: 20px;
 }
 #intro_pop > .fa-solid.fa-star {
     font-size: 20px;
@@ -273,15 +274,14 @@ aside {
 }
 .results2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     height: 95%;
-    width: 90%;
 }
 .populars_list {   
     display: flex;
     flex-direction: column;
-    width: 110%;
+    padding: 0 10px;
 }
 .populars_card {
     border-radius: 18px;
@@ -451,7 +451,7 @@ footer a {
 
 /*MOBILE*/
 
-@media (max-width: 768px)
+@media (max-width: 767px)
 {    
     /*Header*/
     nav {
@@ -725,19 +725,13 @@ footer a {
     }
     #intro_pop {
         margin-left: 40px;
-    }
-    .populars_list {
-        width: auto;
-        margin-left: 50px;
+        margin-right: 40px;
     }
     .populars_list {
         display: flex;
         flex-direction: column;
         margin: 0;
-    }
-    .populars_card {
-        margin-left: 35px;
-        width: 100%;
+        width: auto;
     }
     .populars_card img {
         width: 40%;
